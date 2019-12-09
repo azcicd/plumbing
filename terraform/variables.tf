@@ -1,28 +1,10 @@
-variable "client_id" {
-  default = ""
-}
-variable "client_secret" {
-  default = ""
-}
+# azure auth
+variable "client_id" { }
+variable "client_secret" { }
 
-variable "agent_count" {
-  default = 3
-}
-
-variable "ssh_public_key" {
-  default = "~/.ssh/id_rsa.pub"
-}
-
-variable "dns_prefix" {
-  default = "spinnaker-k8s"
-}
-
-variable cluster_name {
-  default = "spinnaker-k8s"
-}
 
 variable resource_group_name {
-  default = "spinnaker-k8stest"
+  default = "cicd-playground"
 }
 
 variable location {
